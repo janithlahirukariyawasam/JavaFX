@@ -16,7 +16,6 @@ import java.io.IOException;
 public class HelloApplication extends Application {
 
 
-
     public static void main(String[] args) {
         launch(args);
     }
@@ -24,7 +23,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Group root = new Group();
-        Scene scene = new Scene(root,Color.BLACK);
+        Scene scene = new Scene(root, Color.BLACK);
         Image maris = new Image("file:images/marisstella.png");
         stage.getIcons().add(maris);
         stage.setTitle("    Maris Stella College Negambo");
