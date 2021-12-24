@@ -6,6 +6,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
+import javafx.scene.input.KeyCombination;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -29,6 +30,9 @@ public class HelloApplication extends Application {
         stage.setTitle("    Maris Stella College Negambo");
         stage.setWidth(420);
         stage.setHeight(420);
+        stage.setFullScreen(true);  //full screen
+        stage.setFullScreenExitHint("Press q to exist");
+        stage.setFullScreenExitKeyCombination(KeyCombination.valueOf("q"));
         stage.setScene(scene);
         stage.show();
     }
