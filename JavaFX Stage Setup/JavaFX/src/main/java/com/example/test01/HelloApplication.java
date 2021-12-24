@@ -27,6 +27,8 @@ public class HelloApplication extends Application {
         Image maris = new Image("file:images/marisstella.png");
         stage.getIcons().add(maris);
         stage.setTitle("    Maris Stella College Negambo");
+        stage.setWidth(420);
+        stage.setHeight(420);
         stage.setScene(scene);
         stage.show();
     }
