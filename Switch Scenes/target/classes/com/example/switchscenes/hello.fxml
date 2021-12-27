@@ -8,11 +8,11 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.switchscenes.HelloController">
    <children>
-      <Button layoutX="274.0" layoutY="175.0" mnemonicParsing="false" onAction="#switchToScene2" text="scene 2" />
-      <Label layoutX="241.0" layoutY="40.0" text="Scene 1 ">
+      <Label layoutX="254.0" layoutY="48.0" text="Scene 2">
          <font>
-            <Font size="33.0" />
+            <Font size="27.0" />
          </font>
       </Label>
+      <Button layoutX="274.0" layoutY="233.0" mnemonicParsing="false" onAction="#switchToScene1" text="Scene 1" />
    </children>
 </AnchorPane>
