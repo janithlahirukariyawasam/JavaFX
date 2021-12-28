@@ -6,24 +6,23 @@ import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 
+import java.io.IOException;
+
 
 public class Main extends Application {
 
     @Override
-    public void start(Stage stage) {
-        try {
+    public void start(Stage stage) throws IOException {
 
-            Parent root = FXMLLoader.load(getClass().getResource("Scene1.fxml"));
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-
-        } catch(Exception e) {
-            e.printStackTrace();
-        }
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("scene1.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Communication Between Controllers");
+        stage.setScene(scene);
+        stage.show();
     }
 
     public static void main(String[] args) {
-        launch(args);
+        launch();
     }
+
 }
