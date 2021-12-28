@@ -28,7 +28,7 @@ public class HelloController {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("scene2.fxml"));
         root = loader.load();
-        Scene2Controller scene2Controller = new Scene2Controller();
+        Scene2Controller scene2Controller = loader.getController();
         scene2Controller.displayName(nameTextField.getText());
       /*  Scene2Controller scene2Controller = new Scene2Controller();
         scene2Controller.displayName(username);*/
